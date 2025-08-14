@@ -14,10 +14,10 @@ app.use(express.json());
 // Connect to MongoDB using environment variable or local fallback
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/notepad')
   .then(() => {
-    // console.log('✅ MongoDB connected'); // Commented out
+     console.log('✅ MongoDB connected'); // Commented out
   })
   .catch(err => {
-    // console.error('❌ MongoDB connection error:', err); // Commented out
+     console.error('❌ MongoDB connection error:', err); // Commented out
   });
 
 // Define Note Schema
